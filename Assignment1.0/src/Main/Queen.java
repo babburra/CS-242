@@ -18,10 +18,10 @@ public class Queen extends Piece{
             return false;
         }
         if ((location.getRow() - i) == (location.getCol() - j)){
-            return !routeBlockedBishop(i, j, location.getRow(), location.getCol());
+            return !board.routeBlockedBishop(i, j, location.getRow(), location.getCol());
         }
         if (location.getCol() == j || location.getRow() == i){
-            return !routeBlockedRook(i, j, location.getRow(), location.getCol());
+            return !board.routeBlockedRook(i, j, location.getRow(), location.getCol());
         }
         return false;
     }
