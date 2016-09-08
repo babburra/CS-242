@@ -1,7 +1,7 @@
 package Tests;
 
 import Main.Board;
-import Main.Queen;
+import Main.Location;
 import Main.Rook;
 import org.junit.Test;
 
@@ -16,22 +16,28 @@ public class RookTest {
     @Test
     public void test() {
         board = new Board();
-        Rook r1 = new Rook(0, 0, true);
-        Rook r2 = new Rook(0, 7, true);
-        Rook r3 = new Rook(7, 0, false);
-        Rook r4 = new Rook(7, 7, false);
+        Rook r1 = new Rook(board, new Location(0, 0), true);
+        Rook r2 = new Rook(board, new Location(0, 7), true);
+        Rook r3 = new Rook(board, new Location(7, 0), false);
+        Rook r4 = new Rook(board, new Location(7, 7), false);
+        board.initPiece(r1);
+        board.initPiece(r2);
+        board.initPiece(r3);
+        board.initPiece(r4);
         assertTrue(r1.equals(board.getPiece(0, 0)));
         assertTrue(r2.equals(board.getPiece(0, 7)));
-        assertTrue(r2.equals(board.getPiece(7, 0)));
-        assertTrue(r2.equals(board.getPiece(7, 7)));
+        assertTrue(r3.equals(board.getPiece(7, 0)));
+        assertTrue(r4.equals(board.getPiece(7, 7)));
     }
 
     @Test
     public void isValid() {
-        Rook k1 = new Rook(5, 5, true);
-        assertTrue("Move success", k1.validMove(6, 5));
-        assertTrue("Move success", k1.validMove(5, 7));
-        assertFalse("Move fail", k1.validMove(7, 8));
-        assertFalse("Move fail", k1.validMove(1, 7));
+        board = new Board();
+        Rook r1 = new Rook(board, new Location(4, 4), true);
+        board.initPiece(r1);
+        assertTrue("Move success", r1.validMove(4, 3));
+        assertTrue("Move success", r1.validMove(4, 7));
+        assertFalse("Move fail", r1.validMove(7, 8));
+        assertFalse("Move fail", r1.validMove(1, 7));
     }
 }
