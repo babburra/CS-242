@@ -21,7 +21,7 @@ public class Rook extends Piece{
             if ((location.getCol() != j && location.getRow() != i)){
                 return false;
             }
-            return !routeBlockedRook(i, j, location.getRow(), location.getCol());
+            return !board.routeBlockedRook(i, j, location.getRow(), location.getCol());
         }
         return false;
     }

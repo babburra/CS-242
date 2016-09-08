@@ -21,8 +21,11 @@ public class Bishop extends Piece{
             if (location.getCol() == j || location.getRow() == i || ((location.getRow() - i) != (location.getCol() - j))){
                 return false;
             }
-            return !routeBlockedBishop(i, j, location.getRow(), location.getCol());
+            return !board.routeBlockedBishop(i, j, location.getRow(), location.getCol());
         }
         return false;
     }
+
+
 }
+
