@@ -13,26 +13,28 @@ public class Pawn extends Piece{
         first = b;
     }
 
-    public Pawn(int i, int j, boolean owner){
-        location.setLocation(i, j);
-        setOwner(owner);
+    public Pawn(Board board, Location location, boolean owner){
+        super(board, location, owner);
         setFirst(true);
     }
 
     public boolean validMove(int i, int j){
         // if target location OFB or didn't move, return false
-        if (outOfBoundary(i, j) || didntmove(i, j, location.getRow(),location.getCol())){
+        if (outOfBoundary(i, j) || didntmove(i, j, this.getLocation().getRow(),this.getLocation().getCol())){
             return false;
         }
         //player
-        if (location.getCol() + 1 == j && location.getRow() == i){
-            if (getOwner()){
+        if (this.getLocation().getCol() == j && this.getLocation().getRow() + 1 == i) {
+            if (getOwner()) {
                 return true;
             }
             return false;
         }
+        if (this.getLocation().getCol() + 1 == j && Math.abs(this.getLocation().getRow() - i) == 1 && getBoard().getPiece(i, j).getOwner() == false){
+            return true;
+        }
         //opponent
-        if (location.getCol() - 1 == j && location.getRow() == i){
+        if (this.getLocation().getCol() == j && this.getLocation().getRow() -1 == i){
             if (!getOwner()){
                 return true;
             }

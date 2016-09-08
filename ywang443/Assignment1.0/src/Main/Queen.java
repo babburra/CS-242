@@ -7,21 +7,20 @@ import javafx.scene.input.PickResult;
  */
 public class Queen extends Piece{
 
-    public Queen(int i, int j, boolean owner){
-        location.setLocation(i, j);
-        setOwner(owner);
+    public Queen(Board board, Location location, boolean owner){
+        super(board, location ,owner);
     }
 
     public boolean validMove(int i, int j){
         // if target location OFB or didn't move, return false
-        if (outOfBoundary(i, j) || didntmove(i, j, location.getRow(),location.getCol())){
+        if (outOfBoundary(i, j) || didntmove(i, j, this.getLocation().getRow(), this.getLocation().getCol())){
             return false;
         }
-        if ((location.getRow() - i) == (location.getCol() - j)){
-            return !board.routeBlockedBishop(i, j, location.getRow(), location.getCol());
+        if ((this.getLocation().getRow() - i) == (this.getLocation().getCol() - j)){
+            return !routeBlockedBishop(i, j, this.getLocation().getRow(), this.getLocation().getCol());
         }
-        if (location.getCol() == j || location.getRow() == i){
-            return !board.routeBlockedRook(i, j, location.getRow(), location.getCol());
+        if (this.getLocation().getCol() == j || this.getLocation().getRow() == i){
+            return !routeBlockedRook(i, j, this.getLocation().getRow(), this.getLocation().getCol());
         }
         return false;
     }

@@ -5,19 +5,18 @@ package Main;
  */
 public class Knight extends Piece{
 
-    public Knight(int i, int j, boolean owner){
-        location.setLocation(i, j);
-        setOwner(owner);
+    public Knight(Board board, Location location, boolean owner){
+        super(board, location, owner);
     }
 
     public boolean validMove(int i, int j){
         // if target location OFB or didn't move, return false
-        if (outOfBoundary(i, j) || didntmove(i, j, location.getRow(),location.getCol())){
+        if (outOfBoundary(i, j) || didntmove(i, j, this.getLocation().getRow(),this.getLocation().getCol())){
             return false;
         }
-        if (location.getCol() + j <= 7 && location.getRow() + i <= 7){
-            int diffi = Math.abs(location.getRow() - i);
-            int diffj = Math.abs(location.getCol() - j);
+        if (j <= 7 && i <= 7){
+            int diffi = Math.abs(this.getLocation().getRow() - i);
+            int diffj = Math.abs(this.getLocation().getCol() - j);
             return ((diffi == 2 && diffj == 1) || (diffi == 1 && diffj == 2));
         }
         return false;

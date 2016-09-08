@@ -11,6 +11,11 @@ public class Location{
         col = 0;
     }
 
+    public Location(int i, int j){
+        row = i;
+        col = j;
+    }
+
     public void setLocation(int i, int j){
         row = i;
         col = j;
@@ -24,12 +29,4 @@ public class Location{
         return col;
     }
 
-    @Override
-    public boolean equals(Object O){
-        if (O instanceof Location){
-            Location loc = (Location) O;
-            return (this.row == loc.row) && (this.col == loc.col);
-        }
-        return false;
-    }
 }
