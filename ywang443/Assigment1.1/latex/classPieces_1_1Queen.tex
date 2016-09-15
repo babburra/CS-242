@@ -1,0 +1,70 @@
+\hypertarget{classPieces_1_1Queen}{\section{Pieces.\-Queen Class Reference}
+\label{classPieces_1_1Queen}\index{Pieces.\-Queen@{Pieces.\-Queen}}
+}
+Inheritance diagram for Pieces.\-Queen\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPieces_1_1Queen}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPieces_1_1Queen_ac0848f1b0969ccd73bf865f64f16a7aa}{Queen} (\hyperlink{classPieces_1_1Board}{Board} board, \hyperlink{classPieces_1_1Location}{Location} location, boolean owner)
+\item 
+boolean \hyperlink{classPieces_1_1Queen_a13541bde1a9418c2e53329d267df8f14}{valid\-Move} (int des\-\_\-x, int des\-\_\-y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by yutong on 9/7/16. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPieces_1_1Queen_ac0848f1b0969ccd73bf865f64f16a7aa}{\index{Pieces\-::\-Queen@{Pieces\-::\-Queen}!Queen@{Queen}}
+\index{Queen@{Queen}!Pieces::Queen@{Pieces\-::\-Queen}}
+\subsubsection[{Queen}]{\setlength{\rightskip}{0pt plus 5cm}Pieces.\-Queen.\-Queen (
+\begin{DoxyParamCaption}
+\item[{{\bf Board}}]{board, }
+\item[{{\bf Location}}]{location, }
+\item[{boolean}]{owner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Queen_ac0848f1b0969ccd73bf865f64f16a7aa}
+constructor for queen 
+\begin{DoxyParams}{Parameters}
+{\em board} & game board \\
+\hline
+{\em location} & piece location \\
+\hline
+{\em owner} & piece owner \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPieces_1_1Queen_a13541bde1a9418c2e53329d267df8f14}{\index{Pieces\-::\-Queen@{Pieces\-::\-Queen}!valid\-Move@{valid\-Move}}
+\index{valid\-Move@{valid\-Move}!Pieces::Queen@{Pieces\-::\-Queen}}
+\subsubsection[{valid\-Move}]{\setlength{\rightskip}{0pt plus 5cm}boolean Pieces.\-Queen.\-valid\-Move (
+\begin{DoxyParamCaption}
+\item[{int}]{des\-\_\-x, }
+\item[{int}]{des\-\_\-y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classPieces_1_1Queen_a13541bde1a9418c2e53329d267df8f14}
+
+\begin{DoxyParams}{Parameters}
+{\em des\-\_\-x} & coordinate x of destination tile \\
+\hline
+{\em des\-\_\-y} & coordinate y of destination tile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if it's a valid queen move and no piece is blocking it, false o/w 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classPieces_1_1Piece}{Pieces.\-Piece}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Pieces/Queen.\-java\end{DoxyCompactItemize}
