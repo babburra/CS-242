@@ -1,0 +1,78 @@
+\hypertarget{classMain_1_1Board}{\section{Pieces.\-Board Class Reference}
+\label{classMain_1_1Board}\index{Pieces.\-Board@{Pieces.\-Board}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMain_1_1Board_a4bd1f8b4051884a51a9831d316234296}{\hyperlink{classMain_1_1Piece}{Piece}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries get\-Board} ()}\label{classMain_1_1Board_a4bd1f8b4051884a51a9831d316234296}
+
+\item 
+\hypertarget{classMain_1_1Board_af60163fe1ae1f59892bb625c9b97e2e6}{\hyperlink{classMain_1_1Piece}{Piece} {\bfseries get\-Piece} (int i, int j)}\label{classMain_1_1Board_af60163fe1ae1f59892bb625c9b97e2e6}
+
+\item 
+\hypertarget{classMain_1_1Board_a99ef719bcd606d0e64566403673c71ef}{boolean {\bfseries can\-Move} (int i, int j, Object O)}\label{classMain_1_1Board_a99ef719bcd606d0e64566403673c71ef}
+
+\item 
+\hypertarget{classMain_1_1Board_a6ee57d27f818873da3204a4175b4d836}{void {\bfseries add\-Piece} (\hyperlink{classMain_1_1Piece}{Piece} p, \hyperlink{classMain_1_1Location}{Location} location)}\label{classMain_1_1Board_a6ee57d27f818873da3204a4175b4d836}
+
+\item 
+\hypertarget{classMain_1_1Board_af888c720e9650ed6604976f989a2f9bf}{void {\bfseries init\-Piece} (\hyperlink{classMain_1_1Piece}{Piece} p)}\label{classMain_1_1Board_af888c720e9650ed6604976f989a2f9bf}
+
+\item 
+\hypertarget{classMain_1_1Board_ac9d44d8ec14ae68c2751d068fdcb7434}{void {\bfseries remove\-Piece} (\hyperlink{classMain_1_1Piece}{Piece} p)}\label{classMain_1_1Board_ac9d44d8ec14ae68c2751d068fdcb7434}
+
+\item 
+void \hyperlink{classMain_1_1Board_a3492838a7e3e95308c156cc1c383ce9f}{move\-Piece} (\hyperlink{classMain_1_1Piece}{Piece} p, \hyperlink{classMain_1_1Location}{Location} location)
+\item 
+\hyperlink{classMain_1_1Location}{Location}\mbox{[}$\,$\mbox{]} \hyperlink{classMain_1_1Board_a19921e3ee86b292d7a020cc2ad1d0873}{get\-Path} (int cur\-\_\-x, int cur\-\_\-y, int des\-\_\-x, int des\-\_\-y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by yutong on 9/7/16. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classMain_1_1Board_a19921e3ee86b292d7a020cc2ad1d0873}{\index{Pieces\-::\-Board@{Pieces\-::\-Board}!get\-Path@{get\-Path}}
+\index{get\-Path@{get\-Path}!Pieces::Board@{Pieces\-::\-Board}}
+\subsubsection[{get\-Path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Location} \mbox{[}$\,$\mbox{]} Pieces.\-Board.\-get\-Path (
+\begin{DoxyParamCaption}
+\item[{int}]{cur\-\_\-x, }
+\item[{int}]{cur\-\_\-y, }
+\item[{int}]{des\-\_\-x, }
+\item[{int}]{des\-\_\-y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMain_1_1Board_a19921e3ee86b292d7a020cc2ad1d0873}
+
+\begin{DoxyParams}{Parameters}
+{\em cur\-\_\-x} & piece that is currently under attack, coord x \\
+\hline
+{\em cur\-\_\-y} & piece that is currently under attack, coord y \\
+\hline
+{\em des\-\_\-x} & attacker, coord x \\
+\hline
+{\em des\-\_\-y} & attacker, coord y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return an array of locations that forms the path from attacker to defender, including attackers location since attackers might be killed by other pieces. return null if it's an invalid path. 
+\end{DoxyReturn}
+\hypertarget{classMain_1_1Board_a3492838a7e3e95308c156cc1c383ce9f}{\index{Pieces\-::\-Board@{Pieces\-::\-Board}!move\-Piece@{move\-Piece}}
+\index{move\-Piece@{move\-Piece}!Pieces::Board@{Pieces\-::\-Board}}
+\subsubsection[{move\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}void Pieces.\-Board.\-move\-Piece (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{p, }
+\item[{{\bf Location}}]{location}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMain_1_1Board_a3492838a7e3e95308c156cc1c383ce9f}
+move a piece to the designated location 
+\begin{DoxyParams}{Parameters}
+{\em p} & piece p \\
+\hline
+{\em location} & destination location \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Pieces/Board.\-java\end{DoxyCompactItemize}
