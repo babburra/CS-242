@@ -1,0 +1,145 @@
+\hypertarget{classMain_1_1Piece}{\section{Pieces.\-Piece Class Reference}
+\label{classMain_1_1Piece}\index{Pieces.\-Piece@{Pieces.\-Piece}}
+}
+Inheritance diagram for Pieces.\-Piece\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classMain_1_1Piece}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classMain_1_1Piece_a356ab2be8787119b81978aa86cb1015f}{{\bfseries Piece} (\hyperlink{classMain_1_1Board}{Board} board, \hyperlink{classMain_1_1Location}{Location} location, boolean owner)}\label{classMain_1_1Piece_a356ab2be8787119b81978aa86cb1015f}
+
+\item 
+\hypertarget{classMain_1_1Piece_aaae371fd02262c770ff5d83f84a7c36b}{abstract boolean {\bfseries valid\-Move} (int des\-\_\-x, int des\-\_\-y)}\label{classMain_1_1Piece_aaae371fd02262c770ff5d83f84a7c36b}
+
+\item 
+\hypertarget{classMain_1_1Piece_aff1443bf99c1f2b945ca6b62cc7ab83d}{\hyperlink{classMain_1_1Board}{Board} {\bfseries get\-Board} ()}\label{classMain_1_1Piece_aff1443bf99c1f2b945ca6b62cc7ab83d}
+
+\item 
+\hypertarget{classMain_1_1Piece_ac70f538f6f546f4c9a2df7485d23b2e5}{\hyperlink{classMain_1_1Location}{Location} {\bfseries get\-Location} ()}\label{classMain_1_1Piece_ac70f538f6f546f4c9a2df7485d23b2e5}
+
+\item 
+\hypertarget{classMain_1_1Piece_a3921dc492afd3cd1e239fbfa493d5bf0}{boolean {\bfseries get\-Owner} ()}\label{classMain_1_1Piece_a3921dc492afd3cd1e239fbfa493d5bf0}
+
+\item 
+\hypertarget{classMain_1_1Piece_a4c08c2f6db7a88ab8e389eec1f687bf8}{void {\bfseries set\-Location} (\hyperlink{classMain_1_1Location}{Location} location)}\label{classMain_1_1Piece_a4c08c2f6db7a88ab8e389eec1f687bf8}
+
+\item 
+boolean \hyperlink{classMain_1_1Piece_a0da910c70197865464bb648b7c9d0b30}{check\-Diagonally} (int cur\-\_\-x, int cur\-\_\-y, int des\-\_\-x, int des\-\_\-y)
+\item 
+boolean \hyperlink{classMain_1_1Piece_acff6a3943d4e438ab160d99b76542a9f}{check\-In\-Line} (int cur\-\_\-x, int cur\-\_\-y, int des\-\_\-x, int des\-\_\-y)
+\item 
+boolean \hyperlink{classMain_1_1Piece_a6486c6a36aa8a5fc236ce70106f8515b}{equals} (\hyperlink{classMain_1_1Piece}{Piece} other)
+\item 
+boolean \hyperlink{classMain_1_1Piece_a36e44ac99520481a1100a173c03d9512}{out\-Of\-Boundary} (int des\-\_\-x, int des\-\_\-y)
+\item 
+boolean \hyperlink{classMain_1_1Piece_ace2546caba6c053f2b43358319af0399}{didntmove} (int cur\-\_\-x, int cur\-\_\-y, int des\-\_\-x, int des\-\_\-y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by yutong on 9/4/16. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classMain_1_1Piece_a0da910c70197865464bb648b7c9d0b30}{\index{Pieces\-::\-Piece@{Pieces\-::\-Piece}!check\-Diagonally@{check\-Diagonally}}
+\index{check\-Diagonally@{check\-Diagonally}!Pieces::Piece@{Pieces\-::\-Piece}}
+\subsubsection[{check\-Diagonally}]{\setlength{\rightskip}{0pt plus 5cm}boolean Pieces.\-Piece.\-check\-Diagonally (
+\begin{DoxyParamCaption}
+\item[{int}]{cur\-\_\-x, }
+\item[{int}]{cur\-\_\-y, }
+\item[{int}]{des\-\_\-x, }
+\item[{int}]{des\-\_\-y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMain_1_1Piece_a0da910c70197865464bb648b7c9d0b30}
+
+\begin{DoxyParams}{Parameters}
+{\em cur\-\_\-x} & coordinate x of starting tile \\
+\hline
+{\em cur\-\_\-y} & coordinate y of starting tile \\
+\hline
+{\em des\-\_\-x} & coordinate x of destination tile \\
+\hline
+{\em des\-\_\-y} & coordinate y of destination tile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Check path diagonally, True if the route is blocked, False o/w 
+\end{DoxyReturn}
+\hypertarget{classMain_1_1Piece_acff6a3943d4e438ab160d99b76542a9f}{\index{Pieces\-::\-Piece@{Pieces\-::\-Piece}!check\-In\-Line@{check\-In\-Line}}
+\index{check\-In\-Line@{check\-In\-Line}!Pieces::Piece@{Pieces\-::\-Piece}}
+\subsubsection[{check\-In\-Line}]{\setlength{\rightskip}{0pt plus 5cm}boolean Pieces.\-Piece.\-check\-In\-Line (
+\begin{DoxyParamCaption}
+\item[{int}]{cur\-\_\-x, }
+\item[{int}]{cur\-\_\-y, }
+\item[{int}]{des\-\_\-x, }
+\item[{int}]{des\-\_\-y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMain_1_1Piece_acff6a3943d4e438ab160d99b76542a9f}
+
+\begin{DoxyParams}{Parameters}
+{\em cur\-\_\-x} & coordinate x of starting tile \\
+\hline
+{\em cur\-\_\-y} & coordinate y of starting tile \\
+\hline
+{\em des\-\_\-x} & coordinate x of destination tile \\
+\hline
+{\em des\-\_\-y} & coordinate y of destination tile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Check path horizontally and vertically, True if the route is blocked, False o/w 
+\end{DoxyReturn}
+\hypertarget{classMain_1_1Piece_ace2546caba6c053f2b43358319af0399}{\index{Pieces\-::\-Piece@{Pieces\-::\-Piece}!didntmove@{didntmove}}
+\index{didntmove@{didntmove}!Pieces::Piece@{Pieces\-::\-Piece}}
+\subsubsection[{didntmove}]{\setlength{\rightskip}{0pt plus 5cm}boolean Pieces.\-Piece.\-didntmove (
+\begin{DoxyParamCaption}
+\item[{int}]{cur\-\_\-x, }
+\item[{int}]{cur\-\_\-y, }
+\item[{int}]{des\-\_\-x, }
+\item[{int}]{des\-\_\-y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMain_1_1Piece_ace2546caba6c053f2b43358319af0399}
+\begin{DoxyReturn}{Returns}
+true if the chess piece didn't move, false o/w 
+\end{DoxyReturn}
+\hypertarget{classMain_1_1Piece_a6486c6a36aa8a5fc236ce70106f8515b}{\index{Pieces\-::\-Piece@{Pieces\-::\-Piece}!equals@{equals}}
+\index{equals@{equals}!Pieces::Piece@{Pieces\-::\-Piece}}
+\subsubsection[{equals}]{\setlength{\rightskip}{0pt plus 5cm}boolean Pieces.\-Piece.\-equals (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{other}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMain_1_1Piece_a6486c6a36aa8a5fc236ce70106f8515b}
+
+\begin{DoxyParams}{Parameters}
+{\em other} & the other chess piece need to be compared \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Return true if the two pieces are the same piece, false o/w 
+\end{DoxyReturn}
+\hypertarget{classMain_1_1Piece_a36e44ac99520481a1100a173c03d9512}{\index{Pieces\-::\-Piece@{Pieces\-::\-Piece}!out\-Of\-Boundary@{out\-Of\-Boundary}}
+\index{out\-Of\-Boundary@{out\-Of\-Boundary}!Pieces::Piece@{Pieces\-::\-Piece}}
+\subsubsection[{out\-Of\-Boundary}]{\setlength{\rightskip}{0pt plus 5cm}boolean Pieces.\-Piece.\-out\-Of\-Boundary (
+\begin{DoxyParamCaption}
+\item[{int}]{des\-\_\-x, }
+\item[{int}]{des\-\_\-y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMain_1_1Piece_a36e44ac99520481a1100a173c03d9512}
+
+\begin{DoxyParams}{Parameters}
+{\em des\-\_\-x} & coordinate x of destination tile \\
+\hline
+{\em des\-\_\-y} & coordinate y of destination tile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if destination tile is not on the board, false o/w 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Pieces/Piece.\-java\end{DoxyCompactItemize}

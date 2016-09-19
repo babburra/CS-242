@@ -1,0 +1,82 @@
+\hypertarget{classPieces_1_1Pawn}{\section{Pieces.\-Pawn Class Reference}
+\label{classPieces_1_1Pawn}\index{Pieces.\-Pawn@{Pieces.\-Pawn}}
+}
+Inheritance diagram for Pieces.\-Pawn\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPieces_1_1Pawn}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+boolean \hyperlink{classPieces_1_1Pawn_a80400d0f5bfade69ebcd06ccbd339835}{is\-First} ()
+\item 
+\hyperlink{classPieces_1_1Pawn_a4b162dc7bf4688bc79a5337110358e01}{Pawn} (\hyperlink{classPieces_1_1Board}{Board} board, \hyperlink{classPieces_1_1Location}{Location} location, boolean owner)
+\item 
+boolean \hyperlink{classPieces_1_1Pawn_a8fc4c6055b94785d65f0bf092ff3094a}{valid\-Move} (int des\-\_\-x, int des\-\_\-y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by yutong on 9/4/16. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPieces_1_1Pawn_a4b162dc7bf4688bc79a5337110358e01}{\index{Pieces\-::\-Pawn@{Pieces\-::\-Pawn}!Pawn@{Pawn}}
+\index{Pawn@{Pawn}!Pieces::Pawn@{Pieces\-::\-Pawn}}
+\subsubsection[{Pawn}]{\setlength{\rightskip}{0pt plus 5cm}Pieces.\-Pawn.\-Pawn (
+\begin{DoxyParamCaption}
+\item[{{\bf Board}}]{board, }
+\item[{{\bf Location}}]{location, }
+\item[{boolean}]{owner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Pawn_a4b162dc7bf4688bc79a5337110358e01}
+constructor for pawn 
+\begin{DoxyParams}{Parameters}
+{\em board} & game board \\
+\hline
+{\em location} & piece location \\
+\hline
+{\em owner} & piece owner \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPieces_1_1Pawn_a80400d0f5bfade69ebcd06ccbd339835}{\index{Pieces\-::\-Pawn@{Pieces\-::\-Pawn}!is\-First@{is\-First}}
+\index{is\-First@{is\-First}!Pieces::Pawn@{Pieces\-::\-Pawn}}
+\subsubsection[{is\-First}]{\setlength{\rightskip}{0pt plus 5cm}boolean Pieces.\-Pawn.\-is\-First (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Pawn_a80400d0f5bfade69ebcd06ccbd339835}
+\begin{DoxyReturn}{Returns}
+true if it's the first move of a pawn, false o/w 
+\end{DoxyReturn}
+\hypertarget{classPieces_1_1Pawn_a8fc4c6055b94785d65f0bf092ff3094a}{\index{Pieces\-::\-Pawn@{Pieces\-::\-Pawn}!valid\-Move@{valid\-Move}}
+\index{valid\-Move@{valid\-Move}!Pieces::Pawn@{Pieces\-::\-Pawn}}
+\subsubsection[{valid\-Move}]{\setlength{\rightskip}{0pt plus 5cm}boolean Pieces.\-Pawn.\-valid\-Move (
+\begin{DoxyParamCaption}
+\item[{int}]{des\-\_\-x, }
+\item[{int}]{des\-\_\-y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classPieces_1_1Pawn_a8fc4c6055b94785d65f0bf092ff3094a}
+
+\begin{DoxyParams}{Parameters}
+{\em des\-\_\-x} & coord x of destination tile \\
+\hline
+{\em des\-\_\-y} & coord y of destination tile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it's a valid pawn move, false o/w 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classPieces_1_1Piece}{Pieces.\-Piece}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Pieces/Pawn.\-java\end{DoxyCompactItemize}
