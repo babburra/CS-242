@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['validmove',['validMove',['../classPieces_1_1Bishop.html#a0f854a40e1cf35efead6c52374356d17',1,'Pieces.Bishop.validMove()'],['../classPieces_1_1King.html#a0704fc0a6fba08b50db2aeed6734acc4',1,'Pieces.King.validMove()'],['../classPieces_1_1Knight.html#a79b75fe95dcf838c0ff131bc3dc8db31',1,'Pieces.Knight.validMove()'],['../classPieces_1_1Pawn.html#a8fc4c6055b94785d65f0bf092ff3094a',1,'Pieces.Pawn.validMove()'],['../classPieces_1_1Queen.html#a13541bde1a9418c2e53329d267df8f14',1,'Pieces.Queen.validMove()'],['../classPieces_1_1Rook.html#a4a5ff8db747f19ce44ad2d3b53559c57',1,'Pieces.Rook.validMove()'],['../classPieces_1_1SpecialBishop.html#a478a8c0332931da570772e4abe5405fd',1,'Pieces.SpecialBishop.validMove()'],['../classPieces_1_1SpecialRook.html#a605a972351e3bc6221a4071112aa179d',1,'Pieces.SpecialRook.validMove()']]]
+];

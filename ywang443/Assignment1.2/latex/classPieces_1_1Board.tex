@@ -1,0 +1,134 @@
+\hypertarget{classPieces_1_1Board}{\section{Pieces.\-Board Class Reference}
+\label{classPieces_1_1Board}\index{Pieces.\-Board@{Pieces.\-Board}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classPieces_1_1Board_a5b88acf39af28ae35203fdc2726b5d30}{\hyperlink{classPieces_1_1Piece}{Piece}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries get\-Board} ()}\label{classPieces_1_1Board_a5b88acf39af28ae35203fdc2726b5d30}
+
+\item 
+\hypertarget{classPieces_1_1Board_a2417b574df42d2d2fe0bb30b2362829f}{\hyperlink{classPieces_1_1Piece}{Piece} {\bfseries get\-Piece} (int i, int j)}\label{classPieces_1_1Board_a2417b574df42d2d2fe0bb30b2362829f}
+
+\item 
+boolean \hyperlink{classPieces_1_1Board_aea9bbc7c7ba0a38264e2bccb53b57944}{can\-Move} (int i, int j, Object O)
+\item 
+void \hyperlink{classPieces_1_1Board_abf2357a58cfc3dc41a70538203185e85}{add\-Piece} (\hyperlink{classPieces_1_1Piece}{Piece} p, \hyperlink{classPieces_1_1Location}{Location} location)
+\item 
+void \hyperlink{classPieces_1_1Board_a7adb66ee30f16a87e8857d936de44610}{init\-Piece} (\hyperlink{classPieces_1_1Piece}{Piece} p)
+\item 
+void \hyperlink{classPieces_1_1Board_a01edc50a8996328e62a476a363c3901d}{remove\-Piece} (\hyperlink{classPieces_1_1Piece}{Piece} p)
+\item 
+void \hyperlink{classPieces_1_1Board_af5e7fe0f867051c7445abbec349600eb}{move\-Piece} (\hyperlink{classPieces_1_1Piece}{Piece} p, \hyperlink{classPieces_1_1Location}{Location} location)
+\item 
+\hyperlink{classPieces_1_1Location}{Location}\mbox{[}$\,$\mbox{]} \hyperlink{classPieces_1_1Board_a7e38dc282c0bdcc090e4a9ac3a632943}{get\-Path} (int cur\-\_\-x, int cur\-\_\-y, int des\-\_\-x, int des\-\_\-y)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by yutong on 9/7/16. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classPieces_1_1Board_abf2357a58cfc3dc41a70538203185e85}{\index{Pieces\-::\-Board@{Pieces\-::\-Board}!add\-Piece@{add\-Piece}}
+\index{add\-Piece@{add\-Piece}!Pieces::Board@{Pieces\-::\-Board}}
+\subsubsection[{add\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}void Pieces.\-Board.\-add\-Piece (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{p, }
+\item[{{\bf Location}}]{location}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Board_abf2357a58cfc3dc41a70538203185e85}
+add a piece to a location 
+\begin{DoxyParams}{Parameters}
+{\em p} & target piece p \\
+\hline
+{\em location} & destination location \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPieces_1_1Board_aea9bbc7c7ba0a38264e2bccb53b57944}{\index{Pieces\-::\-Board@{Pieces\-::\-Board}!can\-Move@{can\-Move}}
+\index{can\-Move@{can\-Move}!Pieces::Board@{Pieces\-::\-Board}}
+\subsubsection[{can\-Move}]{\setlength{\rightskip}{0pt plus 5cm}boolean Pieces.\-Board.\-can\-Move (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j, }
+\item[{Object}]{O}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Board_aea9bbc7c7ba0a38264e2bccb53b57944}
+move a piece to location (i,j) 
+\begin{DoxyParams}{Parameters}
+{\em i} & coordinate x of destination tile \\
+\hline
+{\em j} & coordinate y of destination tile \\
+\hline
+{\em O} & an arbitrary piece \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if it's a valid move, o/w return false 
+\end{DoxyReturn}
+\hypertarget{classPieces_1_1Board_a7e38dc282c0bdcc090e4a9ac3a632943}{\index{Pieces\-::\-Board@{Pieces\-::\-Board}!get\-Path@{get\-Path}}
+\index{get\-Path@{get\-Path}!Pieces::Board@{Pieces\-::\-Board}}
+\subsubsection[{get\-Path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Location} \mbox{[}$\,$\mbox{]} Pieces.\-Board.\-get\-Path (
+\begin{DoxyParamCaption}
+\item[{int}]{cur\-\_\-x, }
+\item[{int}]{cur\-\_\-y, }
+\item[{int}]{des\-\_\-x, }
+\item[{int}]{des\-\_\-y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Board_a7e38dc282c0bdcc090e4a9ac3a632943}
+
+\begin{DoxyParams}{Parameters}
+{\em cur\-\_\-x} & piece that is currently under attack, coord x \\
+\hline
+{\em cur\-\_\-y} & piece that is currently under attack, coord y \\
+\hline
+{\em des\-\_\-x} & attacker, coord x \\
+\hline
+{\em des\-\_\-y} & attacker, coord y \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return an array of locations that forms the path from attacker to defender, including attackers location since attackers might be killed by other pieces. return null if it's an invalid path. 
+\end{DoxyReturn}
+\hypertarget{classPieces_1_1Board_a7adb66ee30f16a87e8857d936de44610}{\index{Pieces\-::\-Board@{Pieces\-::\-Board}!init\-Piece@{init\-Piece}}
+\index{init\-Piece@{init\-Piece}!Pieces::Board@{Pieces\-::\-Board}}
+\subsubsection[{init\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}void Pieces.\-Board.\-init\-Piece (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Board_a7adb66ee30f16a87e8857d936de44610}
+initialize a piece on the board 
+\begin{DoxyParams}{Parameters}
+{\em p} & target piece p \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPieces_1_1Board_af5e7fe0f867051c7445abbec349600eb}{\index{Pieces\-::\-Board@{Pieces\-::\-Board}!move\-Piece@{move\-Piece}}
+\index{move\-Piece@{move\-Piece}!Pieces::Board@{Pieces\-::\-Board}}
+\subsubsection[{move\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}void Pieces.\-Board.\-move\-Piece (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{p, }
+\item[{{\bf Location}}]{location}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Board_af5e7fe0f867051c7445abbec349600eb}
+move a piece to the designated location 
+\begin{DoxyParams}{Parameters}
+{\em p} & piece p \\
+\hline
+{\em location} & destination location \\
+\hline
+\end{DoxyParams}
+\hypertarget{classPieces_1_1Board_a01edc50a8996328e62a476a363c3901d}{\index{Pieces\-::\-Board@{Pieces\-::\-Board}!remove\-Piece@{remove\-Piece}}
+\index{remove\-Piece@{remove\-Piece}!Pieces::Board@{Pieces\-::\-Board}}
+\subsubsection[{remove\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}void Pieces.\-Board.\-remove\-Piece (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Board_a01edc50a8996328e62a476a363c3901d}
+remove a piece from the board 
+\begin{DoxyParams}{Parameters}
+{\em p} & target piece p \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Pieces/Board.\-java\end{DoxyCompactItemize}

@@ -1,0 +1,173 @@
+\hypertarget{classPieces_1_1Logic}{\section{Pieces.\-Logic Class Reference}
+\label{classPieces_1_1Logic}\index{Pieces.\-Logic@{Pieces.\-Logic}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPieces_1_1Piece}{Piece} \hyperlink{classPieces_1_1Logic_a8b2c1f370c82d9639758c409ea8d9d79}{get\-Piece} (int i, int j)
+\item 
+\hyperlink{classPieces_1_1Piece}{Piece} \hyperlink{classPieces_1_1Logic_ad83f352abf092e2740ab495d65a97ae9}{get\-King} (boolean owner)
+\item 
+\hyperlink{classPieces_1_1Piece}{Piece} \hyperlink{classPieces_1_1Logic_aec1ccc44beb7de53fd9077469feff9e8}{checked\-By\-Knight} (\hyperlink{classPieces_1_1Piece}{Piece} p)
+\item 
+\hyperlink{classPieces_1_1Piece}{Piece} \hyperlink{classPieces_1_1Logic_af1d641f37da06c3e45b5a6bee9a6525b}{checked\-Diagonal} (\hyperlink{classPieces_1_1Piece}{Piece} p)
+\item 
+\hyperlink{classPieces_1_1Piece}{Piece} \hyperlink{classPieces_1_1Logic_ac0bb52cd90a0dd7cacc10521eb2e57f8}{checked\-In\-Line} (\hyperlink{classPieces_1_1Piece}{Piece} p)
+\item 
+boolean \hyperlink{classPieces_1_1Logic_aaf2761d9be4c7aba979922d5919bea28}{is\-Checked} (\hyperlink{classPieces_1_1Piece}{Piece} p)
+\item 
+boolean \hyperlink{classPieces_1_1Logic_aaeeb3da7c87dc40646df2b3f1b4bc50e}{no\-Moves} (\hyperlink{classPieces_1_1Piece}{Piece} p)
+\item 
+boolean \hyperlink{classPieces_1_1Logic_a876ca4b44bc7042fd633f1545e46013a}{is\-Check\-Mate} (\hyperlink{classPieces_1_1Piece}{Piece} p)
+\item 
+boolean \hyperlink{classPieces_1_1Logic_a9d339891130cff2940891cdf85a0f248}{is\-Stale\-Mate} (\hyperlink{classPieces_1_1Piece}{Piece} p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Created by yutong on 9/8/16. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classPieces_1_1Logic_aec1ccc44beb7de53fd9077469feff9e8}{\index{Pieces\-::\-Logic@{Pieces\-::\-Logic}!checked\-By\-Knight@{checked\-By\-Knight}}
+\index{checked\-By\-Knight@{checked\-By\-Knight}!Pieces::Logic@{Pieces\-::\-Logic}}
+\subsubsection[{checked\-By\-Knight}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} Pieces.\-Logic.\-checked\-By\-Knight (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Logic_aec1ccc44beb7de53fd9077469feff9e8}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & king \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return the knight that's checking the king, null o/w 
+\end{DoxyReturn}
+\hypertarget{classPieces_1_1Logic_af1d641f37da06c3e45b5a6bee9a6525b}{\index{Pieces\-::\-Logic@{Pieces\-::\-Logic}!checked\-Diagonal@{checked\-Diagonal}}
+\index{checked\-Diagonal@{checked\-Diagonal}!Pieces::Logic@{Pieces\-::\-Logic}}
+\subsubsection[{checked\-Diagonal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} Pieces.\-Logic.\-checked\-Diagonal (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Logic_af1d641f37da06c3e45b5a6bee9a6525b}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & king \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return the piece that's checking the king diagonally, null o/w 
+\end{DoxyReturn}
+\hypertarget{classPieces_1_1Logic_ac0bb52cd90a0dd7cacc10521eb2e57f8}{\index{Pieces\-::\-Logic@{Pieces\-::\-Logic}!checked\-In\-Line@{checked\-In\-Line}}
+\index{checked\-In\-Line@{checked\-In\-Line}!Pieces::Logic@{Pieces\-::\-Logic}}
+\subsubsection[{checked\-In\-Line}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} Pieces.\-Logic.\-checked\-In\-Line (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Logic_ac0bb52cd90a0dd7cacc10521eb2e57f8}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & king \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return the piece that's checking the king vertically and horizontally, null o/w 
+\end{DoxyReturn}
+\hypertarget{classPieces_1_1Logic_ad83f352abf092e2740ab495d65a97ae9}{\index{Pieces\-::\-Logic@{Pieces\-::\-Logic}!get\-King@{get\-King}}
+\index{get\-King@{get\-King}!Pieces::Logic@{Pieces\-::\-Logic}}
+\subsubsection[{get\-King}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} Pieces.\-Logic.\-get\-King (
+\begin{DoxyParamCaption}
+\item[{boolean}]{owner}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Logic_ad83f352abf092e2740ab495d65a97ae9}
+
+\begin{DoxyParams}{Parameters}
+{\em owner} & ownership of a piece \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the king of one player 
+\end{DoxyReturn}
+\hypertarget{classPieces_1_1Logic_a8b2c1f370c82d9639758c409ea8d9d79}{\index{Pieces\-::\-Logic@{Pieces\-::\-Logic}!get\-Piece@{get\-Piece}}
+\index{get\-Piece@{get\-Piece}!Pieces::Logic@{Pieces\-::\-Logic}}
+\subsubsection[{get\-Piece}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} Pieces.\-Logic.\-get\-Piece (
+\begin{DoxyParamCaption}
+\item[{int}]{i, }
+\item[{int}]{j}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Logic_a8b2c1f370c82d9639758c409ea8d9d79}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & coordinate x of destination tile \\
+\hline
+{\em j} & coordinate y of destination tile \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return the piece on the destination tile 
+\end{DoxyReturn}
+\hypertarget{classPieces_1_1Logic_aaf2761d9be4c7aba979922d5919bea28}{\index{Pieces\-::\-Logic@{Pieces\-::\-Logic}!is\-Checked@{is\-Checked}}
+\index{is\-Checked@{is\-Checked}!Pieces::Logic@{Pieces\-::\-Logic}}
+\subsubsection[{is\-Checked}]{\setlength{\rightskip}{0pt plus 5cm}boolean Pieces.\-Logic.\-is\-Checked (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Logic_aaf2761d9be4c7aba979922d5919bea28}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & king \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if the king is checked, false o/w 
+\end{DoxyReturn}
+\hypertarget{classPieces_1_1Logic_a876ca4b44bc7042fd633f1545e46013a}{\index{Pieces\-::\-Logic@{Pieces\-::\-Logic}!is\-Check\-Mate@{is\-Check\-Mate}}
+\index{is\-Check\-Mate@{is\-Check\-Mate}!Pieces::Logic@{Pieces\-::\-Logic}}
+\subsubsection[{is\-Check\-Mate}]{\setlength{\rightskip}{0pt plus 5cm}boolean Pieces.\-Logic.\-is\-Check\-Mate (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Logic_a876ca4b44bc7042fd633f1545e46013a}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & king \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if the game is in checkmate, false o/w 
+\end{DoxyReturn}
+\hypertarget{classPieces_1_1Logic_a9d339891130cff2940891cdf85a0f248}{\index{Pieces\-::\-Logic@{Pieces\-::\-Logic}!is\-Stale\-Mate@{is\-Stale\-Mate}}
+\index{is\-Stale\-Mate@{is\-Stale\-Mate}!Pieces::Logic@{Pieces\-::\-Logic}}
+\subsubsection[{is\-Stale\-Mate}]{\setlength{\rightskip}{0pt plus 5cm}boolean Pieces.\-Logic.\-is\-Stale\-Mate (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Logic_a9d339891130cff2940891cdf85a0f248}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & king \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if the game is stalemate, false o/w 
+\end{DoxyReturn}
+\hypertarget{classPieces_1_1Logic_aaeeb3da7c87dc40646df2b3f1b4bc50e}{\index{Pieces\-::\-Logic@{Pieces\-::\-Logic}!no\-Moves@{no\-Moves}}
+\index{no\-Moves@{no\-Moves}!Pieces::Logic@{Pieces\-::\-Logic}}
+\subsubsection[{no\-Moves}]{\setlength{\rightskip}{0pt plus 5cm}boolean Pieces.\-Logic.\-no\-Moves (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{p}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPieces_1_1Logic_aaeeb3da7c87dc40646df2b3f1b4bc50e}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & king \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+return true if the king has no legal move, false o/w 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+src/\-Pieces/Logic.\-java\end{DoxyCompactItemize}
