@@ -28,11 +28,11 @@ public class PawnTest {
     @Test
     public void isValid() {
         board = new Board();
-        Pawn p1 = new Pawn(board, new Location(3, 3), true);
-        Pawn p2 = new Pawn(board, new Location(4, 4), false);
+        Pawn p1 = new Pawn(board, new Location(3, 3), false);
+        Pawn p2 = new Pawn(board, new Location(4, 4), true);
         board.initPiece(p1);
         board.initPiece(p2);
-        assertTrue("Move success", p1.validMove(4, 4, true));
+        assertTrue("Move success", p1.validMove(4, 4, false));
         assertFalse("Move fail", p1.validMove(6, 4, true));
         assertFalse("Move fail", p2.validMove(7, 8, true));
     }

@@ -3,7 +3,6 @@ package GUI;
 import Pieces.Location;
 import Pieces.Logic;
 import Pieces.*;
-import jdk.nashorn.internal.scripts.JO;
 
 import javax.swing.*;
 import java.awt.*;
@@ -77,10 +76,18 @@ public class GameGUI {
         }
     }
 
+    /**
+     * populate the menubar
+     * @param menuBar menubar about to be populated
+     */
     private void populateMenuBar(JMenuBar menuBar) {
         menuBar.add(createMenu());
     }
 
+    /**
+     * create the menubar
+     * @return return the created menubar
+     */
     private JMenu createMenu() {
         final JMenu menu = new JMenu("Menu");
         final JMenuItem newGame = new JMenuItem("New Game");
@@ -118,6 +125,9 @@ public class GameGUI {
         return menu;
     }
 
+    /**
+     * Undo a step
+     */
     private void Undo() {
 
         turn = !turn;
@@ -125,6 +135,10 @@ public class GameGUI {
     }
 
     private JButton selected = null;
+
+    /**
+     * action listner for the board
+     */
     private class btnPressed implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {

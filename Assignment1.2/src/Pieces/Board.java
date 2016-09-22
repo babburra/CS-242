@@ -273,6 +273,11 @@ public class Board{
         return true;
     }
 
+    /**
+     *
+     * @param king
+     * @return return true if the king has no move, false o/w
+     */
     private boolean kingNoMove(Piece king) {
         int cur_x = king.getLocation().getRow();
         int cur_y = king.getLocation().getCol();
