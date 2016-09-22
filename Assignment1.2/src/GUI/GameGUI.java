@@ -137,27 +137,11 @@ public class GameGUI {
     private JButton selected = null;
 
     /**
-     * action listner for the board
+     * action listener for the board
      */
     private class btnPressed implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (logic.getBoard().getState() == Board.State.checkmate) {
-                //System.out.println("Checkmate!");
-                if (turn)
-                    score_black++;
-                else
-                    score_white++;
-                JOptionPane.showMessageDialog(null, "Checkmate!\n"+"Score:" + score_white + ":" + score_black);
-                //System.out.println("Score:" + score_white + ":" + score_black);
-                gameBoard.setFocusable(false);
-                return;
-            }
-            if (logic.getBoard().getState() == Board.State.stalemate){
-                JOptionPane.showMessageDialog(null, "Stalemate!\n"+"Score:" + score_white + ":" + score_black);
-                gameBoard.setFocusable(false);
-                return;
-            }
             JButton btn = (JButton) e.getSource();
             //System.out.println("pressed " + btn.getClientProperty("row") + "," + btn.getClientProperty("col"));
             //pressed an empty button
@@ -191,6 +175,23 @@ public class GameGUI {
                     dest = btn;
                     moved = selected;
                     turn = !turn;
+
+                    if (logic.getBoard().getState() == Board.State.checkmate) {
+                        //System.out.println("Checkmate!");
+                        if (turn)
+                            score_black++;
+                        else
+                            score_white++;
+                        JOptionPane.showMessageDialog(null, "Checkmate!\n"+"Score:" + score_white + ":" + score_black);
+                        //System.out.println("Score:" + score_white + ":" + score_black);
+                        gameBoard.setFocusable(false);
+                        return;
+                    }
+                    if (logic.getBoard().getState() == Board.State.stalemate){
+                        JOptionPane.showMessageDialog(null, "Stalemate!\n"+"Score:" + score_white + ":" + score_black);
+                        gameBoard.setFocusable(false);
+                        return;
+                    }
                 }
                 selected = null;
             }
