@@ -21,6 +21,9 @@ public class ChessPiece {
     public Location getLocation() {
         return piece.getLocation();
     }
+    public Piece getPiece(){
+        return piece;
+    }
     private static final Map<String, BufferedImage> imageMap = new HashMap<>();
 
     /**

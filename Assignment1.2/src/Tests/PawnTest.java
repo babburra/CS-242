@@ -32,8 +32,8 @@ public class PawnTest {
         Pawn p2 = new Pawn(board, new Location(4, 4), false);
         board.initPiece(p1);
         board.initPiece(p2);
-        assertTrue("Move success", p1.validMove(4, 4));
-        assertFalse("Move fail", p1.validMove(6, 4));
-        assertFalse("Move fail", p2.validMove(7, 8));
+        assertTrue("Move success", p1.validMove(4, 4, true));
+        assertFalse("Move fail", p1.validMove(6, 4, true));
+        assertFalse("Move fail", p2.validMove(7, 8, true));
     }
 }

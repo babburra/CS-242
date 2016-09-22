@@ -31,9 +31,9 @@ public class KnightTest {
         board = new Board();
         Knight k1 = new Knight(board, new Location(3, 1), true);
         board.initPiece(k1);
-        assertTrue("Move success", k1.validMove(4, 3));
-        assertTrue("Move success", k1.validMove(5, 0));
-        assertFalse("Move fail", k1.validMove(5, 5));
-        assertFalse("Move fail", k1.validMove(7, 8));
+        assertTrue("Move success", k1.validMove(4, 3, true));
+        assertTrue("Move success", k1.validMove(5, 0, true));
+        assertFalse("Move fail", k1.validMove(5, 5, true));
+        assertFalse("Move fail", k1.validMove(7, 8, true));
     }
 }

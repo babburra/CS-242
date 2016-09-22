@@ -37,9 +37,9 @@ public class SpecialRookTest {
         SpecialRook r2 = new SpecialRook(board, new Location(4, 5), false);
         board.initPiece(r1);
         board.initPiece(r2);
-        assertTrue("Move success", r1.validMove(4, 3));
-        assertTrue("Move success", r1.validMove(7, 4));
-        assertTrue("Move Success", r1.validMove(4, 6));
-        assertFalse("Move fail", r1.validMove(1, 7));
+        assertTrue("Move success", r1.validMove(4, 3, true));
+        assertTrue("Move success", r1.validMove(7, 4, true));
+        assertTrue("Move Success", r1.validMove(4, 6, true));
+        assertFalse("Move fail", r1.validMove(1, 7, true));
     }
 }

@@ -24,8 +24,8 @@ public class KingTest {
         board = new Board();
         King k1 = new King(board, new Location(4, 4), true);
         board.initPiece(k1);
-        assertTrue("Move success", k1.validMove(5, 5));
-        assertFalse("Move fail", k1.validMove(5, 6));
-        assertFalse("Move fail", k1.validMove(7, 7));
+        assertTrue("Move success", k1.validMove(5, 5, true));
+        assertFalse("Move fail", k1.validMove(5, 6, true));
+        assertFalse("Move fail", k1.validMove(7, 7, true));
     }
 }
