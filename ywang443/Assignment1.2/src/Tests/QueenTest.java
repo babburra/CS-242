@@ -25,8 +25,8 @@ public class QueenTest {
         board = new Board();
         Queen q1 = new Queen(board, new Location(5, 5), true);
         board.initPiece(q1);
-        assertTrue("Move success", q1.validMove(6, 6));
-        assertTrue("Move success", q1.validMove(5, 6));
-        assertFalse("Move fail", q1.validMove(7, 8));
+        assertTrue("Move success", q1.validMove(6, 6, true));
+        assertTrue("Move success", q1.validMove(5, 6, true));
+        assertFalse("Move fail", q1.validMove(7, 8, true));
     }
 }

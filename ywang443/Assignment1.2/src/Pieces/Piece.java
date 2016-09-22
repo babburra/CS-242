@@ -20,7 +20,7 @@ public abstract class Piece{
         this.location = location;
         this.owner = owner;
     }
-    public abstract boolean validMove(int des_x, int des_y);
+    public abstract boolean validMove(int des_x, int des_y, boolean owner);
 
     public Board getBoard(){
         return board;
@@ -49,10 +49,15 @@ public abstract class Piece{
     public boolean checkDiagonally(int cur_x, int cur_y, int des_x, int des_y){
         int dir_x = des_x > cur_x ? 1 : -1;
         int dir_y = des_y > cur_y ? 1 : -1;
-        for (int i = 1; i < Math.abs(des_x - cur_x) + 1; i++) {
+        for (int i = 1; i < Math.abs(des_x - cur_x); i++) {
             if (getBoard().getPiece(cur_x + i * dir_x, cur_y + i * dir_y) != null){
                 return true;
             }
+        }
+        // destination tile has another alliance piece
+        if (getBoard().getPiece(des_x, des_y) != null) {
+            if (getBoard().getPiece(des_x, des_y).getOwner() == getBoard().getPiece(cur_x, cur_y).getOwner())
+                return true;
         }
         return false;
     }
@@ -75,10 +80,15 @@ public abstract class Piece{
             dir_x = des_x > cur_x ? 1 : -1;
         int dist = Math.abs(des_x - cur_x) > Math.abs(des_y - cur_y) ? Math.abs(des_x - cur_x) : Math.abs(des_y - cur_y);
 
-        for (int i = 1; i < dist + 1; i++) {
+        for (int i = 1; i < dist; i++) {
             if (getBoard().getPiece(cur_x + i * dir_x, cur_y + i * dir_y) != null){
                 return true;
             }
+        }
+        // destination tile has another alliance piece
+        if (getBoard().getPiece(des_x, des_y) != null) {
+            if (getBoard().getPiece(des_x, des_y).getOwner() == getBoard().getPiece(cur_x, cur_y).getOwner())
+                return true;
         }
         return false;
     }

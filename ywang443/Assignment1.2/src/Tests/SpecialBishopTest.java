@@ -37,8 +37,8 @@ public class SpecialBishopTest {
         SpecialBishop b2 = new SpecialBishop(board, new Location(5, 5), true);
         board.initPiece(b1);
         board.initPiece(b2);
-        assertTrue("Move Success", b1.validMove(6, 6));
-        assertTrue("Move Success", b1.validMove(3, 3));
-        assertFalse("Move fail", b1.validMove(9, 8));
+        assertTrue("Move Success", b1.validMove(6, 6, true));
+        assertTrue("Move Success", b1.validMove(3, 3, true));
+        assertFalse("Move fail", b1.validMove(9, 8, true));
     }
 }
