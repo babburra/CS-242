@@ -1,0 +1,38 @@
+
+{
+	"data sources" : [
+		"http://www.gcmap.com/" ,
+		"http://www.theodora.com/country_digraphs.html" ,
+		"http://www.citypopulation.de/world/Agglomerations.html" ,
+		"http://www.mongabay.com/cities_urban_01.htm" ,
+		"http://en.wikipedia.org/wiki/Urban_agglomeration" ,
+		"http://www.worldtimezone.com/standard.html"
+	] ,
+	"metros" : [
+		{
+			"code" : "SCL" ,
+			"name" : "Santiago" ,
+			"country" : "CL" ,
+			"continent" : "South America" ,
+			"timezone" : -4 ,
+			"coordinates" : {"S" : 33, "W" : 71} ,
+			"population" : 6000000 ,
+			"region" : 1
+		} , {
+			"code" : "LIM" ,
+			"name" : "Lima" ,
+			"country" : "PE" ,
+			"continent" : "South America" ,
+			"timezone" : -5 ,
+			"coordinates" : {"S" : 12, "W" : 77} ,
+			"population" : 9050000 ,
+			"region" : 1
+		}
+    ],
+    "routes" : [
+		{
+			"ports" : ["SCL" , "LIM"] ,
+			"distance" : 2453
+		}
+    ]
+}

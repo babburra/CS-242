@@ -1,0 +1,42 @@
+html, body {
+	height: 100%;
+}
+
+h1 {
+	margin-top: 0;
+}
+
+#content, #sidebar {
+	bottom: 20%;
+	box-sizing: border-box;
+	height: 100%;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	width: 50%;
+}
+
+#comment_box {
+	bottom: 0;
+	top: 80%;
+	
+}
+
+#content {
+	left: 0;
+	padding: 8px;
+}
+
+#sidebar {
+	border-radius: 0;
+	border: none;
+	margin: 0;
+	right: 0;
+}
+
+#preview {
+	border: none;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
